@@ -1,0 +1,467 @@
+body {
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  #canvas1{
+
+    width:50%;
+  }
+
+  .video{
+    width:50%;
+    height:50vh;
+  }
+
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 40%;
+    left:40%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+  #container{
+    width:100%;
+    padding:1%;
+  }
+
+  #Spinner{
+    display:none;
+  }
+
+  
+  #spinner1{
+    display:none;
+    z-index: 4;
+  }
+
+  #filterux{
+    display:none;
+    width:40%;
+    z-index: 1;
+  }
+
+  #gainux{
+    display:none;
+    width:40%;
+    z-index: 1;
+  }
+
+  #chrousux{
+    display:none;
+    width:40%;
+    z-index: 1;
+  }
+
+
+  #distortionux{
+    display:none;
+    width:40%;
+    z-index: 1;
+  }
+
+  #container{
+    width:100%;
+  }
+#navbar{
+   
+    width:70%;
+    float:left;
+    font-size:16px;
+}
+  #navbar a{
+text-decoration: none;
+margin-left: 10px;
+
+    
+  }
+
+  #heavyfun{
+    float:right;
+    width:50%;
+    
+  }
+
+
+  #navbarmain:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+.canvas{
+
+    position:absolute;
+    Left:0;
+    bottom:0;
+    padding:20px;
+    background-color: blue;
+}
+
+
+.button:hover{
+    background-color:red;
+}
+
+.button1{
+    font-size: 18px;
+    background-color: blue;
+    color:white;
+    border:none;
+    padding:12px;
+}
+.button1:hover{
+    background-color:red;
+}
+
+
+
+
+.iframe{
+    width:60%;
+    height: 460px;
+}
+.input{
+    padding:7px;
+    font-size: 16px;
+}
+
+
+
+#linebreak{
+    display:none;
+}
+
+.info{
+    margin-left:40px;
+}
+
+#menu{
+    display:none;
+}
+#information{
+    display:block;
+}
+
+#audioinfo{
+
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  #canvas1{
+
+    width:100%;
+  }
+    #filterux{
+        display:none;
+        width:70%
+      }
+    
+      #gainux{
+        display:none;
+        width:70%
+      }
+
+      .video{
+        width:100%;
+        height:40vh;
+      }
+
+      #chrousux{
+        display:none;
+        width:70%
+      }
+      #distortionux{
+        display:none;
+        width:70%
+      }
+
+
+    #button{
+        display:none;
+    }
+
+    .iframe{
+        width:100%;
+        height:350px;
+    }
+
+    #menu{
+        width:100%;
+        display:block;
+    }
+    #linebreak{
+        display:block;
+    }
+
+    #totallength1{
+        margin-left:0px;
+    }
+
+    
+.button2{
+    display:block;
+    border:none;
+    width:100%;
+    padding-bottom:4%;
+    padding-top:3%;
+}
+
+#information{
+    display:none;
+}
+
+#navbar{
+    float:none;
+   
+    
+   width:100%;
+   
+}
+#heavyfun{
+    float:none;
+  width:100%;
+    margin-top:10px;
+    
+}
+
+#ad{
+  width:50%;
+}
+  }
+
+
+
+
+
+/* my add */
+
+/* General Page Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #feb255;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #00aaff;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #00aaff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #008ecc;
+}
+
+/* Main Heading */
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* Input Group Styling */
+.input-group-text {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.input-group-text:hover {
+  background-color: #008ecc;
+}
+
+.form-control {
+  border: 2px solid #00aaff;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #008ecc;
+}
+
+/* Audio Information Styling */
+#audioinfo {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+}
+
+.info {
+  font-weight: bold;
+  color: #00aaff;
+}
+
+#spinner1 {
+  background: linear-gradient(to right, #00aaff, #008ecc);
+  z-index: 1000;
+}
+
+/* Custom Button Styling */
+.button2 {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button2:hover {
+  background-color: #008ecc;
+  transform: scale(1.05);
+}
+
+/* Modal Window Styling */
+#filterux, #gainux, #chrousux, #distortionux {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  max-width: 100%;
+}
+
+h5 {
+  color: #00aaff;
+}
+
+/* Buttons in Modals */
+#filterux button, #gainux button, #chrousux button, #distortionux button {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#filterux button:hover, #gainux button:hover, #chrousux button:hover, #distortionux button:hover {
+  background-color: #008ecc;
+}
+
+/* Canvas Styling */
+canvas {
+  border: 2px solid #00aaff;
+  border-radius: 5px;
+}
+
+/* Spinner Styling */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #00aaff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Input Focus Effects */
+input[type="number"], input[type="text"] {
+  border: 2px solid #00aaff;
+  padding: 8px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+  border-color: #008ecc;
+  outline: none;
+}
+
+/* Hover Effects */
+button:hover {
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  .navbar-brand {
+      font-size: 1.2rem;
+  }
+
+  .button2 {
+      font-size: 0.9rem;
+  }
+}
+
+.error_color{
+  color: rgb(255, 0, 0);
+}
+
+#upload_id{
+  padding-left: 10%;
+}
